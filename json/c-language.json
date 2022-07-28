@@ -1,0 +1,6 @@
+{
+    "title":"About C language",
+    "slug":"c-language",
+    "author":"Anshu",
+    "description":"C is a high-level and general-purpose programming language that is ideal for developing firmware or portable applications. Originally intended for writing system software, C was developed at Bell Labs by Dennis Ritchie for the Unix Operating System in the early 1970s. Ranked among the most widely used languages, C has a compiler for most computer systems and has influenced many popular languages – notably C++. Fixed number of keywords, including a set of control primitives, such as if, for, while, switch and do while Multiple logical and mathematical operators, including bit manipulators Multiple assignments may be applied in a single statement. Function return values are not always required and may be ignored if unneeded. Typing is static. All data has type but may be implicitly converted. Basic form of modularity, as files may be separately compiled and linked Control of function and object visibility to other files via extern and static attributes"
+}

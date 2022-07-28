@@ -1,0 +1,26 @@
+// card container data
+
+.cardcontainer {
+  width: 100%;
+  margin-top: 3rem;
+  position: absolute;
+  top: 3rem;
+ padding: 2rem 0;
+}
+.linkdesc {
+  color: rgba(72, 72, 209, 0.589);
+  float: right;
+}
+
+.quicknote {
+  width: 70%;
+}
+.cardstate {
+  margin: auto;
+}
+
+@media (max-width:900px){
+  .caretleft{
+    display: none;
+  }
+}

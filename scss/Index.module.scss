@@ -1,0 +1,14 @@
+//**** color palette ****** //
+
+$container-primary: cyan;
+$text-primary: rebeccapurple;
+
+.text {
+  color: $text-primary;
+  font-weight: 800;
+}
+.caretmenu{
+  position: absolute;
+  top: 2.50vw;
+  left: 85%;
+}
