@@ -2,6 +2,8 @@ import React from "react";
 import { Modal, Button, Text } from "@nextui-org/react";
 import { FaHeart, FaCriticalRole } from "react-icons/fa";
 import contactresponsive from "./scss/Contact.module.scss";
+import SnackbarComponent from "../components/Snackbar/Snackbar"
+
 
 export default function ContactLogin() {
   const [visible, setVisible] = React.useState(false);
@@ -123,12 +125,7 @@ export default function ContactLogin() {
               </div>
             </div>
             <Modal.Footer>
-            <button type="submit" className={contactresponsive.sumbitbtn}>
-              Submit
-            </button>
-            <button type="submit" className={contactresponsive.sumbitbtn}>
-              Get Back
-            </button>
+            <SnackbarComponent message="Thanks for contacting us 😊😊"/>
             </Modal.Footer>
           </form>
         </Modal.Body>
