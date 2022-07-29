@@ -2,8 +2,7 @@ import React from "react";
 import { Modal, Button, Text } from "@nextui-org/react";
 import { FaHeart, FaCriticalRole } from "react-icons/fa";
 import contactresponsive from "./scss/Contact.module.scss";
-import SnackbarComponent from "../components/Snackbar/Snackbar"
-
+import SnackbarComponent from "../components/Snackbar/Snackbar";
 
 export default function ContactLogin() {
   const [visible, setVisible] = React.useState(false);
@@ -13,11 +12,11 @@ export default function ContactLogin() {
     console.log("closed");
   };
 
-  // * data add
+  // * data adddition of new visitors
 
-  const [description, setDescription] = React.useState("");
-  const [email, setEmail] = React.useState("");
-  const [phone, setPhone] = React.useState("");
+  const [description, setDescription] = React.useState(``);
+  const [email, setEmail] = React.useState(``);
+  const [phone, setPhone] = React.useState(``);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -35,9 +34,15 @@ export default function ContactLogin() {
       .then((response) => response.text())
       .then((data) => {
         console.log("Success:", data);
+        setPhone(``);
+        setDescription(``);
+        setEmail(``);
       })
       .catch((error) => {
         console.error("Error:", error);
+        setPhone(``);
+        setDescription(``);
+        setEmail(``);
       });
   };
   const handleChange = (e) => {
@@ -125,7 +130,7 @@ export default function ContactLogin() {
               </div>
             </div>
             <Modal.Footer>
-            <SnackbarComponent message="Thanks for contacting us 😊😊"/>
+              <SnackbarComponent message="Thanks for contacting us 😊😊" />
             </Modal.Footer>
           </form>
         </Modal.Body>

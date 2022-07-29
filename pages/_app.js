@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import NavbarComponent from "./Router/Navbar";
 import { createTheme, NextUIProvider } from "@nextui-org/react";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
+import SpeedDialTooltipOpen from "./components/SpeedDial/SpeedDial";
 
 const lightTheme = createTheme({
   type: "light",
@@ -24,6 +25,7 @@ function MyApp({ Component, pageProps }) {
         }}
       >
         <NextUIProvider>
+          <SpeedDialTooltipOpen />
           <Component {...pageProps} />
           <NavbarComponent {...pageProps}/>
         </NextUIProvider>
