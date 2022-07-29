@@ -127,8 +127,8 @@ export default SlugComponent;
 export async function getStaticPaths() {
   return {
     paths: [
+      { params: { slug: "about-javascript" } },
       { params: { slug: "about-json" } },
-      { params: { slug: "c-language" } },
       { params: { slug: "javascript" } },
     ],
     fallback: false,

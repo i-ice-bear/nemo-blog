@@ -1,11 +1,10 @@
 import React from "react";
-import Head from "next/head";
 import Link from "next/link";
 import styles from "../scss/Home.module.scss";
 import sassstyle from "../scss/Index.module.scss";
-import { Button, Avatar } from "@nextui-org/react";
+import {  Avatar } from "@nextui-org/react";
 import { Card, Grid, Text } from "@nextui-org/react";
-import { FaArrowRight, FaEllipsisV } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import DropDownComponent from "./components/Dropdown/Dropdown";
 import * as fs from "fs";
 import InfiniteScroll from "react-infinite-scroll-component";
