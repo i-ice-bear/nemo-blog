@@ -2,7 +2,7 @@ import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { VscChromeClose } from "react-icons/vsc";
 
-export default function Example() {
+export default function SlideOverComponent() {
   const [open, setOpen] = useState(true);
 
   return (

@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }) {
       >
         <NextUIProvider>
           <Component {...pageProps} />
-          <NavbarComponent />
+          <NavbarComponent {...pageProps}/>
         </NextUIProvider>
       </NextThemesProvider>
     </>
