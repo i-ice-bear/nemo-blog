@@ -1,12 +1,12 @@
+import * as fs from "fs";
 import React from "react";
 import Link from "next/link";
 import styles from "../scss/Home.module.scss";
 import sassstyle from "../scss/Index.module.scss";
-import {  Avatar } from "@nextui-org/react";
+import { Avatar } from "@nextui-org/react";
 import { Card, Grid, Text } from "@nextui-org/react";
 import { FaArrowRight } from "react-icons/fa";
 import DropDownComponent from "./components/Dropdown/Dropdown";
-import * as fs from "fs";
 import InfiniteScroll from "react-infinite-scroll-component";
 import LoadingComponent from "./components/Mini-modules/Loading";
 import PaginationComponent from "./components/Mini-modules/Pagination";
@@ -14,6 +14,7 @@ import PaginationComponent from "./components/Mini-modules/Pagination";
 export default function Home(props) {
   const [blog, setBlog] = React.useState(props.allBlogs);
   const [count, setCount] = React.useState(3);
+
   const fetchData = async () => {
     let linkdata = await fetch(
       `http://localhost:3000/api/blog/?count=${count + 3}`
@@ -41,9 +42,9 @@ export default function Home(props) {
           hasMore={props.allCount !== blog.length}
           loader={<LoadingComponent />}
           endMessage={
-            <p style={{ textAlign: "center" }}>
-              <PaginationComponent data={blog.length}/>
-            </p>
+            <div className="d-flex justify-center items-center">
+              <PaginationComponent data={blog.length} />
+            </div>
           }
         >
           <div className="row container">
@@ -129,6 +130,7 @@ export async function getStaticProps(context) {
     allBlogs.push(JSON.parse(myfile));
   }
   return {
-    props: { allBlogs,allCount },
+    props: { allBlogs, allCount },
   };
 }
+

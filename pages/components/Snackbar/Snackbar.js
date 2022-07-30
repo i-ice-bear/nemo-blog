@@ -11,6 +11,8 @@ const Alert = React.forwardRef(function Alert(props, ref) {
 });
 
 function SnackbarComponent(props) {
+
+
   const [open, setOpen] = React.useState(false);
 
   const handleClick = () => {
@@ -37,7 +39,7 @@ function SnackbarComponent(props) {
       >
         Submit
       </button>
-      <button type="submit" className={contactresponsive.sumbitbtn}>
+      <button onClick={props.clickout} className={contactresponsive.sumbitbtn}>
         Get Back
       </button>
       <Snackbar

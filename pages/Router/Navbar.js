@@ -12,6 +12,7 @@ import Link from 'next/link';
 const navigation = [
   { name: "Home", href: "/", current: true },
   { name: "About", href: "../page/About",  },
+  { name: "Write your own blog", href: "../page/WriteBlog",  },
 ];
 
 function classNames(...classes) {

@@ -7,7 +7,6 @@ export default async function handleClick(req, res) {
   let allBlogs = [];
   for (let index = 0; index < data.length; index++) {
     const items = data[index];
-    console.log(items);
     myfile = await fs.promises.readFile("json/" + items, "utf-8");
     allBlogs.push(JSON.parse(myfile));
   };
