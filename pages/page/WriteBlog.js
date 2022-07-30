@@ -78,7 +78,7 @@ const WriteBlogComponent = () => {
                   name="slug"
                 />
                 <div id="emailHelp" className="form-text">
-                  We'll never share your Phone no. with anyone else.
+                  We will never share your Phone no. with anyone else.
                 </div>
               </div>
 
@@ -91,7 +91,7 @@ const WriteBlogComponent = () => {
                     className="form-control rounded-3xl h-25"
                     onChange={handleChange}
                     value={description}
-                    placeholder="What's your concern with us..."
+                    placeholder="What is your concern with us..."
                     id="description"
                     name="description"
                   />
@@ -99,7 +99,7 @@ const WriteBlogComponent = () => {
                 </div>
                 <div id="emailHelp" className="form-text mt-3">
                   the form we we will contact you maximum 2 to 3 days.{" "}
-                  <a href="/">Read</a> our docs for more information
+                  <span className="text-blue-600">Read</span> our docs for more information
                 </div>
                 <button type="submit" className="bg-cyan-300 text-dark">
                   Send

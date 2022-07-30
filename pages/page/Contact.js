@@ -88,7 +88,7 @@ export default function ContactLogin() {
                 onChange={handleChange}
               />
               <div id="emailHelp" className="form-text">
-                We'll never share your email with anyone else.
+                We will never share your email with anyone else.
               </div>
             </div>
             <div className="mb-3">
