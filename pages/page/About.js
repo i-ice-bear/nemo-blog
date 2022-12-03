@@ -1,6 +1,7 @@
 import React from "react";
 import aboutstyle from "./scss/About.module.scss";
 import { FaArrowRight } from "react-icons/fa";
+
 const AboutComponent = () => {
   return (
     <>
