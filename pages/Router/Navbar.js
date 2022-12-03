@@ -6,13 +6,12 @@ import { useTheme as useNextTheme } from "next-themes";
 import { Switch, useTheme, Text } from "@nextui-org/react";
 import { FaMoon, FaSun } from "react-icons/fa";
 import ContactComponent from "../page/Contact";
-import Link from 'next/link';
-
+import Link from "next/link";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
-  { name: "About", href: "../page/About",  },
-  { name: "Write your own blog", href: "../page/WriteBlog",  },
+  { name: "About", href: "../page/About" },
+  { name: "Write your own blog", href: "../page/WriteBlog" },
 ];
 
 function classNames(...classes) {
@@ -22,6 +21,7 @@ function classNames(...classes) {
 export default function NavbarComponent() {
   const { setTheme } = useNextTheme();
   const { isDark, type } = useTheme();
+
   return (
     <>
       <div className={navstyle.mainnav}>
@@ -170,7 +170,6 @@ export default function NavbarComponent() {
                     <Disclosure.Button
                       key={item.name}
                       as="a"
-                      href={item.href}
                       className={classNames(
                         item.current
                           ? "bg-gray-900 text-white no-underline"
@@ -179,7 +178,7 @@ export default function NavbarComponent() {
                       )}
                       aria-current={item.current ? "page" : undefined}
                     >
-                      {item.name}
+                      <Link href={item.href}>{item.name}</Link>
                     </Disclosure.Button>
                   ))}
                 </div>
