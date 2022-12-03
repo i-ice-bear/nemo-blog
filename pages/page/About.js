@@ -11,7 +11,7 @@ const AboutComponent = () => {
           <div className="content">
             <div className="wrappers" id={aboutstyle.headerContainerContent}>
               <h1 className={aboutstyle.headerHeading}>
-                We offer lot's of blogs for you. For free and for everyone
+                We offer lots of blogs for you. For free and for everyone
               </h1>
               <p className="w-50 text-light">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
