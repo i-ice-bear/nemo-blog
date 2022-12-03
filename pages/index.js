@@ -25,6 +25,8 @@ export default function Home(props) {
   };
 
   return (
+    <>
+    <br />
     <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>
@@ -115,6 +117,7 @@ export default function Home(props) {
         </a>
       </footer>
     </div>
+    </>
   );
 }
 
